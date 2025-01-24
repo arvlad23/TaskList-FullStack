@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+	max-width: 1120px;
+	margin: 0 auto;
+}
+section.tasks {
+	padding: 48px 0;
+	.tasks-wrapper {
+		.task-item {
+			.title-wrapper {
+				position: relative;
+				&:after {
+					position: absolute;
+					content: '';
+					top: calc(50% - 1px);
+					left: 50%;
+					height: 2px;
+					background-color: #000;
+					width: 0;
+					transition: all 0.3s;
+				}
+			}
+			.checked {
+				.title-wrapper {
+					&:after {
+						width: 100%;
+						left: 0;
+					}
+				}
+			}
+		}
+	}
+}
