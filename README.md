@@ -1,63 +1,31 @@
 # Task Management App
 
-Task Management App — это приложение для управления задачами, в котором пользователи могут добавлять, удалять и помечать задачи как выполненные. Приложение построено с использованием React для фронтенда и NestJS для бэкенда, с TypeScript для строгой типизации.
+A web application for managing tasks, built with **NestJS** for the backend and **React** for the frontend. The app allows users to add, delete, and mark tasks as completed. The project uses **Prisma** for database interactions with **PostgreSQL** and **Material-UI** for the UI. Developed with **TypeScript** for type safety and better development experience.
 
-## Описание
+## Features
 
-Это веб-приложение для управления задачами. Оно позволяет пользователям:
+- **Task CRUD Operations**: Add, remove, and update tasks.
+- **Task Completion Toggle**: Mark tasks as completed or pending.
+- **Database**: Using **Prisma** to interact with a **PostgreSQL** database.
+- **UI**: Responsive interface with **Material-UI** components.
 
-- Добавлять новые задачи.
-- Отметить задачи как выполненные.
-- Удалять задачи.
+## Tech Stack
 
-Проект состоит из двух частей:
+- **Backend**: NestJS
+- **Frontend**: NextJS
+- **Database**: PostgreSQL
+- **ORM**: Prisma
+- **UI**: Material-UI
+- **TypeScript**: For strict typing
 
-1. **Frontend** — интерфейс для взаимодействия с пользователем (React + Material-UI).
-2. **Backend** — сервер для обработки запросов (NestJS).
+## Installation
 
-## Технологии
+### Backend (NestJS)
 
-### Фронтенд
+### Frontend (NextJS)
 
-- **React** — библиотека для создания пользовательских интерфейсов.
-- **Material-UI** — библиотека компонентов UI.
-- **Axios** — для взаимодействия с API.
-- **TypeScript** — надстройка над JavaScript для строгой типизации.
-
-### Бэкенд
-
-- **NestJS** — фреймворк для разработки серверных приложений на Node.js с использованием TypeScript.
-- **Prisma** — ORM для работы с базой данных.
-- **PostgreSQL** — база данных для хранения задач.
-
-## Структура проекта
-
-Проект состоит из двух частей: **Frontend** и **Backend**. Каждая часть имеет свой собственный каталог.
-
-### Frontend
-
-- **src/** - исходный код React-приложения.
-  - **components/** - компоненты, такие как Task, Input и т.д.
-  - **types/** - типы для TypeScript.
-  - **api/** - функции для взаимодействия с API.
-  - **App.tsx** - главный компонент приложения.
-  - **index.tsx** - точка входа в приложение.
-
-### Backend
-
-- **src/** - исходный код серверной части.
-  - **app.module.ts** - основной модуль приложения.
-  - **tasks/** - модуль для работы с задачами.
-    - **tasks.controller.ts** - контроллер для обработки запросов.
-    - **tasks.service.ts** - сервис для логики работы с задачами.
-    - **tasks.model.ts** - модель для работы с задачами через Prisma.
-
-## Установка
-
-### 1. Клонирование репозитория
-
-Клонируйте репозиторий:
-
-```bash
-git clone https://github.com/your-username/task-management-app.git
-
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/task-management-app.git
+   cd task-management-app
+   ```
